@@ -1,0 +1,193 @@
+#home {
+  width: 100%;
+  .main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.16rem;
+    width: 49.2%;
+    text-align: left;
+    transition: all 0.25s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.24);
+      img {
+        transform: scale(1.06);
+      }
+    }
+    .post-header {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: transform 0.6s ease-out;
+      }
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        padding: 0.12rem;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+      }
+      h3 {
+        display: inline-block;
+        font-size: 0.18rem;
+        font-weight: normal;
+        color: #eee;
+      }
+      span {
+        font-size: 0.12rem;
+        color: #eee;
+        text-transform: capitalize;
+      }
+    }
+    .post-body {
+      padding: 0.12rem 0.14rem;
+      p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-height: 1.6;
+        font-size: 0.14rem;
+        text-align: justify;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+    .post-meta {
+      display: flex;
+      padding: 0.12rem 0.14rem;
+      height: 0.5rem;
+      font-size: 0.14rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      & > span {
+        display: flex;
+        align-items: center;
+        margin-right: 0.12rem;
+        span {
+          padding-right: 6px;
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        .icon {
+          margin-right: 4px;
+        }
+        .icon-fire {
+          margin-top: -2px;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+  .pagination {
+    position: relative;
+    margin: 0.3rem auto 0;
+    width: 1.6rem;
+    height: 0.5rem;
+    z-index: 99;
+    .previous {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0.2rem;
+      height: 0.5rem;
+      font-size: 0.16rem;
+      line-height: 0.5rem;
+      background-color: rgba(255, 2555, 255, 0.66);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.24);
+      transition: all 0.25s ease-out;
+      overflow: hidden;
+      text-shadow: 0 1px 1px #b28fce;
+      span {
+        color: #986db2;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #b28fce;
+        transform: scaleX(0);
+        transform-origin: bottom left;
+        transition: all 0.25s ease-out;
+      }
+    }
+    .rect {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      width: 1.6rem;
+      height: 0.5rem;
+      z-index: -2;
+      border: 2px solid #fff;
+      border-top-width: 0;
+      border-left-width: 0;
+      background: transparent;
+      transition: all 0.25s ease-out;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        transition: background 0.25s ease-out;
+      }
+      &::before {
+        top: 0;
+        right: 0;
+        width: 6px;
+        height: 2px;
+      }
+      &::after {
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 6px;
+      }
+    }
+
+    &:hover {
+      .previous {
+        transform: translate(2px, 2px);
+        span {
+          color: #eee;
+        }
+        &::before {
+          transform: scaleX(1);
+        }
+      }
+      .rect {
+        border-color: #986db2;
+        &::after,
+        &::before {
+          background-color: #986db2;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .main {
+      justify-content: space-around;
+      article {
+        margin-bottom: 0.32rem;
+        width: 98%;
+      }
+    }
+  }
+}

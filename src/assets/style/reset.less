@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #555;
+}
+
+::selection {
+  color: #fff;
+  background: #b28fce;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* 顶部进度条 */
+.__cov-progress {
+  z-index: 99;
+}
+
+/* 烟花特效 */
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* 滚动条 */
+.custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #986db2;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent
+    );
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+& {
+  .custom-scroll;
+}
+
+/* 轮播背景 */
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(https://i.loli.net/2018/12/16/5c164034ac74c.jpg);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.backstretch li {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: imageAnimation 80s linear infinite 0s;
+}
+.backstretch li:nth-child(1) {
+  background-image: url(https://i.loli.net/2018/12/16/5c164034ac74c.jpg); // 1
+}
+.backstretch li:nth-child(2) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc108c3b5c.jpg); // 3
+  animation-delay: 8s;
+}
+.backstretch li:nth-child(3) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc1010f9e5.jpg); // 2
+  animation-delay: 16s;
+}
+.backstretch li:nth-child(4) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc10d3d771.jpg); // 4
+  animation-delay: 24s;
+}
+.backstretch li:nth-child(5) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc111f30a3.jpg); // 5
+  animation-delay: 32s;
+}
+.backstretch li:nth-child(6) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc1159ea42.jpg); // 6
+  animation-delay: 40s;
+}
+.backstretch li:nth-child(7) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc11b0691b.jpg); // 7
+  animation-delay: 48s;
+}
+.backstretch li:nth-child(8) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc12115c2e.jpg); // 8
+  animation-delay: 56s;
+}
+.backstretch li:nth-child(9) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc0f409d63.jpg);
+  animation-delay: 64s;
+}
+.backstretch li:nth-child(10) {
+  background-image: url(https://i.loli.net/2018/12/09/5c0cc1268cd42.jpg);
+  animation-delay: 72s;
+}
+/* Animation for the slideshow images */
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  1.5% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  13% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 代码高亮 */
+code[class*='language-'] {
+  width: 100%;
+  font-weight: bold;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  padding: 0.12rem 0.16rem;
+  max-height: 6rem;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.08);
+  box-shadow: #999 0px 10px 8px -10px inset, #999 0px -10px 8px -10px inset;
+  overflow: auto;
+  .custom-scroll;
+}
+
+td.hljs-ln-numbers {
+  padding-right: 0.16rem;
+  text-align: center;
+}
+
+/* 灯箱 */
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.66);
+}
+.lg-image {
+  box-shadow: 0 0 1.6rem #eee;
+}
+#lg-counter {
+  &,
+  span {
+    color: #999;
+  }
+}
+.lg-outer .lg-thumb-outer {
+  padding: 0 5px;
+  background-color: rgba(0, 0, 0, 0.45);
+  .lg-thumb-item {
+    &.active,
+    &:hover {
+      border-color: #b854d4;
+    }
+  }
+}
+.lg-progress-bar .lg-progress {
+  background-color: #b854d4;
+}
+.lg-sub-html h4 {
+  color: #dfdfdf;
+}
+
+/* Gitalk */
+#gitalk {
+  .gt-container {
+    text-align: left;
+    a {
+      color: #b854d4;
+      border-bottom: none;
+    }
+    .gt-svg svg {
+      fill: #b854d4;
+    }
+    .gt-comment-date,
+    .gt-container .gt-comment-text {
+      color: #666;
+    }
+    .gt-ico-text {
+      color: #b854d4;
+    }
+    .gt-btn-login {
+      margin-top: 0;
+      border: none;
+      background-color: #986db2 !important;
+      span {
+        line-height: 1;
+        color: #fff;
+      }
+    }
+  }
+  .gt-meta {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    .gt-counts {
+      float: left;
+    }
+    .gt-popup {
+      margin-top: 0.1rem;
+      .is--active::before {
+        background: #b854d4;
+      }
+    }
+  }
+  .gt-header {
+    textarea,
+    .gt-header-preview {
+      border: none;
+      min-height: 1rem;
+      max-height: 2rem;
+      background-color: rgba(255, 255, 255, 0.66);
+      background-image: url(https://i.loli.net/2018/12/09/5c0cc2b905841.png);
+      background-size: 1.2rem;
+      background-repeat: no-repeat;
+      background-position: 99% bottom;
+    }
+    .gt-header-controls-tip {
+      float: left;
+    }
+    .gt-btn {
+      border: none;
+      background-color: rgba(255, 255, 255, 0.66);
+    }
+    .gt-btn-public {
+      background-color: #986db2;
+      span {
+        color: #fff;
+      }
+    }
+    .gt-avatar-github {
+      svg {
+        fill: #986db2;
+      }
+    }
+  }
+  .gt-comments {
+    .gt-comment-content {
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.66);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.24);
+      transition: all 0.25s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.24);
+      }
+    }
+    .gt-btn-loadmore {
+      border: none;
+      background-color: #986db2;
+      span {
+        color: #fff;
+      }
+    }
+    .gt-comment-body {
+      max-height: 6rem;
+      overflow: auto;
+      .custom-scroll;
+    }
+  }
+
+  textarea,
+  .gt-btn-login,
+  .gt-btn-preview,
+  .gt-btn-loadmore,
+  .gt-btn-public,
+  .gt-avatar {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.24);
+  }
+}
