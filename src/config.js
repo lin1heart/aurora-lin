@@ -93,7 +93,7 @@ export default {
    */
   friendOpts: {
     enableGitalk: true,
-    qoute: '青青子衿，悠悠我心'
+    qoute: '三人行，必有我师'
   },
 
   /**
