@@ -102,7 +102,7 @@ export default {
   aboutOpts: {
     enableGitalk: true,
     qoute: '一生一期,一期一会',
-    avatar: 'https://i.loli.net/2018/12/09/5c0cc2b4e0195.png',
+    avatar: 'https://i.loli.net/2019/03/07/5c8091b36ebd0.png',
     college: 'Software Engineering',
     // 联系方式
     contact: [
