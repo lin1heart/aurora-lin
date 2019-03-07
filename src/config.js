@@ -108,7 +108,7 @@ export default {
     contact: [
       {
         icon: 'https://s2.ax1x.com/2019/03/07/kxqjyj.png',
-        link: 'http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=tNnR9Nfc1drH3N3NwZrX29k'
+        link: 'mailto:lin1heart@foxmail.com'
       },
       {
         icon: 'https://s2.ax1x.com/2019/03/07/kxqbY8.png',
