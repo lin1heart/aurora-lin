@@ -116,7 +116,7 @@ export default {
     z-index: 99;
     opacity: 1;
     transition: all 0.6s ease-out;
-    background: url(https://i.loli.net/2019/01/24/5c496f5c617f6.png) no-repeat center;
+    background: url(https://s2.ax1x.com/2019/03/08/kxO0V1.png) no-repeat center;
     background-size: contain;
     &.visible {
       animation: float 3s linear infinite;

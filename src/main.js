@@ -90,5 +90,5 @@ console.info('%c 来源 %c', `${labelStyle}background:#986db2;`, '', 'https://gi
 console.info('~❀~ 发现控制台报错请务必联系博主 ~❀~')
 console.log(
   '%c ',
-  'background:url(https://i.loli.net/2018/12/09/5c0cc2b905841.png) no-repeat center;background-size:200px;padding-left:200px;padding-bottom:162px;overflow:hidden;border-radius:10px;margin:5px 0'
+  'background:url(https://s2.ax1x.com/2019/03/07/kxHg76.png) no-repeat center;background-size:200px;padding-left:200px;padding-bottom:162px;overflow:hidden;border-radius:10px;margin:5px 0'
 )

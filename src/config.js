@@ -134,12 +134,12 @@ export default {
   /**
    * 加载动画
    */
-  loadingImg: 'https://i.loli.net/2018/12/15/5c14be28964d2.gif',
+  loadingImg: 'https://s2.ax1x.com/2019/03/08/kxX0yQ.gif',
 
   /**
    * 文章默认图
    */
-  defaultCover: 'https://i.loli.net/2019/01/24/5c49bd8dad2f5.jpg',
+  defaultCover: 'https://s2.ax1x.com/2019/03/08/kxXBLj.jpg',
 
   /**
    * 主题配色，目前主要用于文章、说说、关于等卡片配色，以后可能会有其他用途
@@ -165,7 +165,7 @@ export default {
     {
       name: 'うたかたの风と蝉时雨',
       artist: 'Little Planet',
-      url: 'https://files.catbox.moe/wo7zjt.mp3',
+      url: 'http://music.163.com/#/m/song?id=33497436',
       cover: 'https://i.loli.net/2018/12/09/5c0cc3ca1081b.jpg'
     },
     {
