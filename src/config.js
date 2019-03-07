@@ -102,24 +102,24 @@ export default {
   aboutOpts: {
     enableGitalk: true,
     qoute: '一生一期,一期一会',
-    avatar: 'https://i.loli.net/2019/03/07/5c8091b36ebd0.png',
+    avatar: 'https://s2.ax1x.com/2019/03/07/kxqvOs.png',
     college: 'Software Engineering',
     // 联系方式
     contact: [
       {
-        icon: 'https://i.loli.net/2019/01/25/5c4b2a7558ad7.png',
+        icon: 'https://s2.ax1x.com/2019/03/07/kxqjyj.png',
         link: 'http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=tNnR9Nfc1drH3N3NwZrX29k'
       },
       {
-        icon: 'https://i.loli.net/2019/03/06/5c7ea61163c93.png',
+        icon: 'https://s2.ax1x.com/2019/03/07/kxqbY8.png',
         link: 'https://space.bilibili.com/94774466'
       },
       {
-        icon: 'https://i.loli.net/2019/01/25/5c4b2982b5687.png',
+        icon: 'https://s2.ax1x.com/2019/03/07/kxqqfS.png',
         link: 'https://github.com/lin1heart'
       },
       {
-        icon: 'https://i.loli.net/2018/12/09/5c0cc51ae4f0c.png',
+        icon: 'https://s2.ax1x.com/2019/03/07/kxqOSg.png',
         link: 'https://music.163.com/#/user/home?id=495970988'
       }
     ]
