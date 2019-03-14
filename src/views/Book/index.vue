@@ -1,9 +1,9 @@
 <template>
   <div id="book">
     <Transition name="fade-transform" mode="out-in">
-      <div class="card" v-if="book.length">
+      <div class="card" v-if="book">
         <Quote :quote="$config.bookOpts.qoute" />
-        <ul class="content">
+        <ul class="content" v-if="book!=1">
           <li v-for="item in book" :key="item.name">
             <div class="info">
               <img :src="item.cover" alt />
@@ -32,6 +32,9 @@
             </div>
             <div class="desc">{{ item.desc }}</div>
           </li>
+        </ul>
+        <ul class="content" v-else>
+          <p>哎呀，这个博主好懒，没有推荐的书单呢！</p>
         </ul>
       </div>
       <Loading v-else />

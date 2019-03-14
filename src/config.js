@@ -8,7 +8,7 @@ export default {
   /**
    * 站点标题
    */
-  title: '一期一会',
+  title: 'lin1heart',
   subtitle: '人生天地间 忽如远行客',
 
   /**
@@ -77,7 +77,7 @@ export default {
    */
   moodOpts: {
     enableGitalk: true,
-    qoute: '欲言又止，止言又欲'
+    qoute: '随心所欲，畅所欲言'
   },
 
   /**
@@ -85,7 +85,7 @@ export default {
    */
   bookOpts: {
     enableGitalk: true,
-    qoute: '吾生也有涯，而知也无涯'
+    qoute: '学海无涯'
   },
 
   /**
@@ -166,31 +166,31 @@ export default {
       name: 'うたかたの风と蝉时雨',
       artist: 'Little Planet',
       url: 'http://music.163.com/#/m/song?id=33497436',
-      cover: 'https://i.loli.net/2018/12/09/5c0cc3ca1081b.jpg'
+      // cover: 'https://i.loli.net/2018/12/09/5c0cc3ca1081b.jpg'
     },
     {
       name: '春の凑に',
       artist: 'TUMENECO',
       url: 'https://files.catbox.moe/3o8ivq.mp3',
-      cover: 'https://i.loli.net/2018/12/11/5c0f196d01a3a.jpg'
+      // cover: 'https://i.loli.net/2018/12/11/5c0f196d01a3a.jpg'
     },
     {
       name: '夏阳炎',
       artist: '天威梦方',
       url: 'https://files.catbox.moe/dy5d71.mp3',
-      cover: 'https://i.loli.net/2018/12/09/5c0cc3cee372a.jpg'
+      // cover: 'https://i.loli.net/2018/12/09/5c0cc3cee372a.jpg'
     },
     {
       name: '秋风のとおり道',
       artist: '风神华伝',
       url: 'https://files.catbox.moe/e1t7zh.mp3',
-      cover: 'https://i.loli.net/2018/12/09/5c0cc3d13844a.jpg'
+      // cover: 'https://i.loli.net/2018/12/09/5c0cc3d13844a.jpg'
     },
     {
       name: '冬のわすれもの',
       artist: 'ハルノカゼ',
       url: 'https://files.catbox.moe/2whj5x.mp3',
-      cover: 'https://i.loli.net/2018/12/09/5c0cc3d36349c.jpg'
+      // cover: 'https://i.loli.net/2018/12/09/5c0cc3d36349c.jpg'
     }
   ]
 }
