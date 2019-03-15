@@ -3,7 +3,7 @@
     <Transition name="fade-transform" mode="out-in">
       <div class="card" v-if="book">
         <Quote :quote="$config.bookOpts.qoute" />
-        <ul class="content" v-if="book!=1">
+        <ul class="content" v-if="book != 1">
           <li v-for="item in book" :key="item.name">
             <div class="info">
               <img :src="item.cover" alt />
