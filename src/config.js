@@ -163,34 +163,40 @@ export default {
    */
   APlayer: [
     {
-      name: 'うたかたの风と蝉时雨',
-      artist: 'Little Planet',
-      url: 'http://music.163.com/#/m/song?id=33497436',
-      // cover: 'https://i.loli.net/2018/12/09/5c0cc3ca1081b.jpg'
+      name: '生如逆旅',
+      artist: '圈9',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E5%9C%889%20-%20%E7%94%9F%E5%A6%82%E9%80%86%E6%97%85%EF%BC%88Cover%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%88%EF%BC%89.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/15/AVm1zj.jpg'
     },
     {
-      name: '春の凑に',
-      artist: 'TUMENECO',
-      url: 'https://files.catbox.moe/3o8ivq.mp3',
-      // cover: 'https://i.loli.net/2018/12/11/5c0f196d01a3a.jpg'
+      name: '中华粘土娘',
+      artist: '三无MarBlue',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E4%B8%89%E6%97%A0MarBlue%20-%20%E4%B8%AD%E5%8D%8E%E7%B2%98%E5%9C%9F%E5%A8%98.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/15/AVmlWQ.jpg'
     },
     {
-      name: '夏阳炎',
-      artist: '天威梦方',
-      url: 'https://files.catbox.moe/dy5d71.mp3',
-      // cover: 'https://i.loli.net/2018/12/09/5c0cc3cee372a.jpg'
+      name: '牵丝戏',
+      artist: '圈9',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E5%9C%889%20-%20%E7%89%B5%E4%B8%9D%E6%88%8F.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/15/AVmuo8.jpg'
     },
     {
-      name: '秋风のとおり道',
-      artist: '风神华伝',
-      url: 'https://files.catbox.moe/e1t7zh.mp3',
-      // cover: 'https://i.loli.net/2018/12/09/5c0cc3d13844a.jpg'
+      name: '忽如远行客',
+      artist: '云の泣',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E4%BA%91%E3%81%AE%E6%B3%A3%20-%20%E5%BF%BD%E5%A6%82%E8%BF%9C%E8%A1%8C%E5%AE%A2.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/15/AVmFRH.jpg'
     },
     {
-      name: '冬のわすれもの',
-      artist: 'ハルノカゼ',
-      url: 'https://files.catbox.moe/2whj5x.mp3',
-      // cover: 'https://i.loli.net/2018/12/09/5c0cc3d36349c.jpg'
+      name: '一期一会《未闻花名》（Cover 茅野愛衣,戸松遥,早見沙織）',
+      artist: '周深',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E5%91%A8%E6%B7%B1%20-%20%E4%B8%80%E6%9C%9F%E4%B8%80%E4%BC%9A%E3%80%8A%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D%E3%80%8B%EF%BC%88Cover%20%E8%8C%85%E9%87%8E%E6%84%9B%E8%A1%A3%2C%E6%88%B8%E6%9D%BE%E9%81%A5%2C%E6%97%A9%E8%A6%8B%E6%B2%99%E7%B9%94%EF%BC%89.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/15/AVmZLt.jpg'
+    },
+    {
+      name: 'secret base ~君がくれたもの~ (10 years after Ver.)',
+      artist: '茅野愛衣 / 戸松遥 / 早見沙織',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E8%8C%85%E9%87%8E%E6%84%9B%E8%A1%A3%2C%E6%88%B8%E6%9D%BE%E9%81%A5%2C%E6%97%A9%E8%A6%8B%E6%B2%99%E7%B9%94%20-%20secret%20base%20%7E%E5%90%9B%E3%81%8B%E3%82%99%E3%81%8F%E3%82%8C%E3%81%9F%E3%82%82%E3%81%AE%7E%20%2810%20years%20after%20Ver.%29.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/15/AVmEQA.jpg'
     }
   ]
 }

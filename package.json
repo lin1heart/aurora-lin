@@ -2,7 +2,7 @@
   "name": "aurora",
   "version": "1.0.0",
   "description": "An awesome blog theme",
-  "author": "蝉時雨 <me@chanshiyu.com>",
+  "author": "lin1heart",
   "license": "MIT",
   "scripts": {
     "start": "vue-cli-service serve",
