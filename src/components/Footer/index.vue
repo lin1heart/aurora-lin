@@ -7,7 +7,7 @@
       <p><i class="icon icon-copyright"></i>2019 <i class="icon icon-heart"></i> lin1heart</p>
       <p>
         Theme -
-        <a rel="noopener noreferrer" target="_blank" href="https://github.com/lin1heart/aurora-lin">Aurora-lin</a> |
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/chanshiyucx/aurora">Aurora</a> |
         一生一期 - 一期一会
       </p>
     </div>

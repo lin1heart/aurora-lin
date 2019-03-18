@@ -163,40 +163,34 @@ export default {
    */
   APlayer: [
     {
-      name: '生如逆旅',
-      artist: '圈9',
-      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E5%9C%889%20-%20%E7%94%9F%E5%A6%82%E9%80%86%E6%97%85%EF%BC%88Cover%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%88%EF%BC%89.mp3',
-      cover: 'https://s2.ax1x.com/2019/03/15/AVm1zj.jpg'
+      name: 'いつも何度でも',
+      artist: '宗次郎',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E5%AE%97%E6%AC%A1%E9%83%8E%20-%20%E3%81%84%E3%81%A4%E3%82%82%E4%BD%95%E5%BA%A6%E3%81%A6%E3%82%99%E3%82%82.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/18/AnVo01.jpg'
     },
     {
-      name: '中华粘土娘',
-      artist: '三无MarBlue',
-      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E4%B8%89%E6%97%A0MarBlue%20-%20%E4%B8%AD%E5%8D%8E%E7%B2%98%E5%9C%9F%E5%A8%98.mp3',
-      cover: 'https://s2.ax1x.com/2019/03/15/AVmlWQ.jpg'
+      name: '未闻花名 - 口琴版',
+      artist: 'V.A.',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/V.A.%20-%20%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D%20-%20%E5%8F%A3%E7%90%B4%E7%89%88.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/18/AnEqMj.jpg'
     },
     {
-      name: '牵丝戏',
-      artist: '圈9',
-      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E5%9C%889%20-%20%E7%89%B5%E4%B8%9D%E6%88%8F.mp3',
-      cover: 'https://s2.ax1x.com/2019/03/15/AVmuo8.jpg'
+      name: '恋は渾沌の隷也',
+      artist: 'TAMUSIC',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/TAMUSIC%20-%20%E6%81%8B%E3%81%AF%E6%B8%BE%E6%B2%8C%E3%81%AE%E9%9A%B7%E4%B9%9F.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/18/AnQdLF.jpg'
     },
     {
-      name: '忽如远行客',
-      artist: '云の泣',
-      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E4%BA%91%E3%81%AE%E6%B3%A3%20-%20%E5%BF%BD%E5%A6%82%E8%BF%9C%E8%A1%8C%E5%AE%A2.mp3',
-      cover: 'https://s2.ax1x.com/2019/03/15/AVmFRH.jpg'
+      name: 'MEMORIA Piano Violin ver.',
+      artist: 'TAMUSIC',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/TAMUSIC%20-%20MEMORIA%20Piano%20Violin%20ver.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/18/AnEoi8.png'
     },
     {
-      name: '一期一会《未闻花名》（Cover 茅野愛衣,戸松遥,早見沙織）',
-      artist: '周深',
-      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E5%91%A8%E6%B7%B1%20-%20%E4%B8%80%E6%9C%9F%E4%B8%80%E4%BC%9A%E3%80%8A%E6%9C%AA%E9%97%BB%E8%8A%B1%E5%90%8D%E3%80%8B%EF%BC%88Cover%20%E8%8C%85%E9%87%8E%E6%84%9B%E8%A1%A3%2C%E6%88%B8%E6%9D%BE%E9%81%A5%2C%E6%97%A9%E8%A6%8B%E6%B2%99%E7%B9%94%EF%BC%89.mp3',
-      cover: 'https://s2.ax1x.com/2019/03/15/AVmZLt.jpg'
-    },
-    {
-      name: 'secret base ~君がくれたもの~ (10 years after Ver.)',
-      artist: '茅野愛衣 / 戸松遥 / 早見沙織',
-      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E8%8C%85%E9%87%8E%E6%84%9B%E8%A1%A3%2C%E6%88%B8%E6%9D%BE%E9%81%A5%2C%E6%97%A9%E8%A6%8B%E6%B2%99%E7%B9%94%20-%20secret%20base%20%7E%E5%90%9B%E3%81%8B%E3%82%99%E3%81%8F%E3%82%8C%E3%81%9F%E3%82%82%E3%81%AE%7E%20%2810%20years%20after%20Ver.%29.mp3',
-      cover: 'https://s2.ax1x.com/2019/03/15/AVmEQA.jpg'
+      name: '初音ミクの消失',
+      artist: '石川綾子',
+      url: 'https://aplayer-music.oss-cn-shanghai.aliyuncs.com/%E7%9F%B3%E5%B7%9D%E7%B6%BE%E5%AD%90%20-%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%E3%81%AE%E6%B6%88%E5%A4%B1.mp3',
+      cover: 'https://s2.ax1x.com/2019/03/19/An3jeO.jpg'
     }
   ]
 }
