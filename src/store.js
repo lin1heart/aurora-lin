@@ -74,15 +74,12 @@ export default new Vuex.Store({
       return data
     },
     // 获取文章详情
-    async queryPost({ state }, { number }) {
+    async queryPost(context, { number }) {
       // 获取本篇
-      let post = state.posts.find(o => o.number === number)
-      if (!post) {
-        post = await queryPost(number)
-        let list = await queryHot([post])
-        post = list[0]
-        post = formatPost(post)
-      }
+      let post = await queryPost(number)
+      let list = await queryHot([post], true)
+      post = list[0]
+      post = formatPost(post)
       return post
     },
     // 获取分类
