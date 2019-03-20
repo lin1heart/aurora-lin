@@ -180,3 +180,16 @@ export const likeSite = async type => {
       .catch(console.error)
   }).catch(console.error)
 }
+
+//获取公告
+export const queryNotice = async () => {
+  try {
+    const url = `${blog}/issues?${closed}&labels=notice`
+    const response = await fetch(url)
+    checkStatus(response)
+    const data = await response.json()
+    return data
+  } catch (err) {
+    console.log(err)
+  }
+}

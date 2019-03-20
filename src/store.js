@@ -8,9 +8,10 @@ import {
   queryCategory,
   queryMood,
   queryPage,
-  likeSite
+  likeSite,
+  queryNotice
 } from './utils/services'
-import { formatPost, formatCategory, formatMood, formatPage } from './utils/format'
+import { formatPost, formatCategory, formatMood, formatPage, formatNotice } from './utils/format'
 
 Vue.use(Vuex)
 
@@ -92,7 +93,12 @@ export default new Vuex.Store({
     async queryTag() {
       let data = await queryTag()
       data = data.filter(
-        o => o.name !== 'Mood' && o.name !== 'Friend' && o.name !== 'Book' && o.name !== 'About'
+        o =>
+          o.name !== 'Mood' &&
+          o.name !== 'Friend' &&
+          o.name !== 'Book' &&
+          o.name !== 'About' &&
+          o.name !== 'Notice'
       )
       return data
     },
@@ -115,6 +121,12 @@ export default new Vuex.Store({
     async queryLike(context, payload) {
       const data = await likeSite(payload)
       return data
+    },
+    //获取公告
+    async queryNotice() {
+      let data = await queryNotice()
+      data = formatNotice(data)
+      return data[0]
     }
   }
 })

@@ -42,8 +42,7 @@ export const formatMood = mood => {
  * 格式化书单 & 友链 & 关于
  */
 export const formatPage = (data, type) => {
-  if (!data.body) 
-    return 1
+  if (!data.body) return 1
   let section = data.body.split('## ').filter(o => o.length)
 
   switch (type) {
@@ -87,4 +86,12 @@ export const formatPage = (data, type) => {
       break
   }
   return section
+}
+
+/**
+ * 格式化公告
+ */
+export const formatNotice = notice => {
+  notice.forEach(o => (o.date = format(o.created_at, 'zh_CN')))
+  return notice
 }
