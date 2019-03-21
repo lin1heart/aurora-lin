@@ -126,7 +126,7 @@ export default new Vuex.Store({
     async queryNotice() {
       let data = await queryNotice()
       data = formatNotice(data)
-      return data[0]
+      return data
     }
   }
 })
