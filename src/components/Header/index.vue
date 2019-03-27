@@ -9,25 +9,20 @@
         </li>
       </ul>
     </div>
-    <div class="notice">
-      <i class="icon icon-notice"></i>
-      <div class="notice-detail">
-        <MarkDown :content="item.body" :onlyRender="true" v-for="(item,i) in notice" :key="item.number" :title="i" />
-      </div>
-    </div>
+    <Notice />
   </div>
 </template>
 
 <script>
-import MarkDown from '@/components/MarkDown'
+import Notice from '@/components/Notice'
+
 export default {
   name: 'Header',
   components: {
-    MarkDown
+    Notice
   },
   data() {
     return {
-      notice: [],
       menus: [
         { name: '/', icon: 'shop', title: '首页' },
         { name: '/archive', icon: 'inbox', title: '归档' },
@@ -38,15 +33,6 @@ export default {
         { name: '/friend', icon: 'heart', title: '友链' },
         { name: '/about', icon: 'universal-access', title: '关于' }
       ]
-    }
-  },
-  created() {
-    this.queryNotice()
-  },
-  methods: {
-    async queryNotice() {
-      let a = await this.$store.dispatch('queryNotice')
-      this.notice = a
     }
   }
 }
