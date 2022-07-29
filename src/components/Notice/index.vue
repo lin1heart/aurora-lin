@@ -26,8 +26,8 @@ export default {
     methods: {
         async queryNotice() {
             let a = await this.$store.dispatch('queryNotice')
-            this.notice = a
-            console.log(a)
+            this.notice = a;
+            console.log('notice',this.notice)
         }
     }
 }

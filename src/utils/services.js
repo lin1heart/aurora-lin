@@ -2,9 +2,9 @@ import AV from 'leancloud-storage'
 import config from '../config'
 
 const { blog, token, creator } = config
-const access_token = `access_token=${token.join('')}`
-const open = `creator=${creator}&state=open&${access_token}`
-const closed = `creator=${creator}&state=closed&${access_token}`
+const access_token = `${token.join('')}`
+const open = `creator=${creator}&state=open`
+const closed = `creator=${creator}&state=closed`
 const isDev = window.location.href.includes('localhost')
 
 // 状态检测
@@ -19,7 +19,7 @@ const checkStatus = response => {
 export const queryPosts = async ({ page = 1, pageSize = 10, filter = '' }) => {
   try {
     const url = `${blog}/issues?${open}&page=${page}&per_page=${pageSize}${filter}`
-    const response = await fetch(url)
+    const response = await fetch(url,{ headers:{'Authorization':'token'+access_token} })
     checkStatus(response)
     const data = await response.json()
     return data
@@ -32,7 +32,7 @@ export const queryPosts = async ({ page = 1, pageSize = 10, filter = '' }) => {
 export const queryPost = async number => {
   try {
     const url = `${blog}/issues/${number}?${open}`
-    const response = await fetch(url)
+    const response = await fetch(url,{ headers:{'Authorization':'token'+access_token} })
     checkStatus(response)
     const data = await response.json()
     return data
@@ -44,8 +44,8 @@ export const queryPost = async number => {
 // 获取分类
 export const queryCategory = async () => {
   try {
-    const url = `${blog}/milestones?${access_token}`
-    const response = await fetch(url)
+    const url = `${blog}/milestones`
+    const response = await fetch(url,{ headers:{'Authorization':'token'+access_token} })
     checkStatus(response)
     const data = await response.json()
     return data
@@ -57,8 +57,8 @@ export const queryCategory = async () => {
 // 获取标签
 export const queryTag = async () => {
   try {
-    const url = `${blog}/labels?${access_token}`
-    const response = await fetch(url)
+    const url = `${blog}/labels`
+    const response = await fetch(url,{ headers:{'Authorization':'token'+access_token} })
     checkStatus(response)
     const data = await response.json()
     return data
@@ -71,7 +71,7 @@ export const queryTag = async () => {
 export const queryMood = async ({ page = 1, pageSize = 10 }) => {
   try {
     const url = `${blog}/issues?${closed}&labels=mood&page=${page}&per_page=${pageSize}`
-    const response = await fetch(url)
+    const response = await fetch(url,{ headers:{'Authorization':'token'+access_token} })
     checkStatus(response)
     const data = await response.json()
     return data
@@ -85,7 +85,7 @@ export const queryPage = async type => {
   try {
     const upperType = type.replace(/^\S/, s => s.toUpperCase())
     const url = `${blog}/issues?${closed}&labels=${upperType}`
-    const response = await fetch(url)
+    const response = await fetch(url,{ headers:{'Authorization':'token'+access_token} })
     checkStatus(response)
     const data = await response.json()
     return data[0]
@@ -185,7 +185,7 @@ export const likeSite = async type => {
 export const queryNotice = async () => {
   try {
     const url = `${blog}/issues?${closed}&labels=notice`
-    const response = await fetch(url)
+    const response = await fetch(url,{ headers:{'Authorization':'token'+access_token} })
     checkStatus(response)
     const data = await response.json()
     return data
