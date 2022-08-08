@@ -39,6 +39,8 @@ export default {
     repo: 'comment',
     owner: 'lin1heart',
     admin: ['lin1heart'],
+    proxy: 'https://cors-server-ecru.vercel.app/github_access_token',
+    // proxy: 'https://proxy.lin1heart.cn/https://github.com/login/oauth/access_token',
     distractionFreeMode: false // 是否开始无干扰模式【背景遮罩】
   },
 
