@@ -104,7 +104,7 @@ export default {
   aboutOpts: {
     enableGitalk: true,
     qoute: '一生一期,一期一会',
-    avatar: 'https://s2.ax1x.com/2019/03/07/kxqvOs.png',
+    avatar: 'https://s1.ax1x.com/2022/08/08/vQrQ7d.jpg',
     college: 'Software Engineering',
     // 联系方式
     contact: [
